@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#097969</color>
     <color name="white_green">#ECFFDC</color>
+    <color name="mint">#A3F88C</color>
+    <color name="trans">#00000000</color>
 </resources>

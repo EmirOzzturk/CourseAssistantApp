@@ -1,10 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.AddCourse">
+    tools:context=".activity.AddCourse"
+    android:background="@color/green">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ders Ekleme"
+            android:textSize="32sp"
+            android:fontFamily="@font/merriweather_light"
+            android:paddingVertical="60dp"/>
+
+        <TextView
+            android:id="@+id/courseId"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/merriweather_light"
+            android:text="Ders Kodu"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextCourseId"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/text_view_circle"/>
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/merriweather_light"
+            android:text="Ders İsmi"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextCourseName"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:background="@drawable/text_view_circle"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/groupNumber"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/merriweather_light"
+            android:text="Grup Sayısı"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextGroupNumber"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/text_view_circle"/>
+
+        <Button
+            android:id="@+id/addCourseButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="Ders Ekle" />
+
+    </LinearLayout>
+
+</ScrollView>

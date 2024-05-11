@@ -1,4 +1,4 @@
-package com.example.courseassistansapp.view;
+package com.example.courseassistansapp.activity;
 
 import android.Manifest;
 import android.app.Activity;
@@ -47,7 +47,7 @@ public class AccountActivity extends AppCompatActivity {
     private Uri imageUri = null;
     public static final int CAMERA_PERM_CODE = 101;
     public static final int CAMERA_REQUEST_CODE = 102;
-    String currentPhotoPath;
+    public static String currentPhotoPath;
     StorageReference storageRef = FirebaseStorage.getInstance("gs://course-assistants-app.appspot.com").getReference();
     FirebaseAuth Auth = FirebaseAuth.getInstance();
     DatabaseReference myDatabase = FirebaseDatabase.getInstance("https://course-assistants-app-default-rtdb.europe-west1.firebasedatabase.app/")
