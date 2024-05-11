@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "96726537827",
+    "firebase_url": "https://course-assistants-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "course-assistants-app",
+    "storage_bucket": "course-assistants-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96726537827:android:5cb1efd08668d6948b8a56",
+        "android_client_info": {
+          "package_name": "com.example.courseassistansapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQV2_3SgG8isL7vFVaAjPk6beClZonQAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96726537827:android:91fd31ce488b171c8b8a56",
+        "android_client_info": {
+          "package_name": "com.example.courseassistantsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQV2_3SgG8isL7vFVaAjPk6beClZonQAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
