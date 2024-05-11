@@ -1,4 +1,4 @@
-package com.example.courseassistansapp;
+package com.example.courseassistansapp.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            startActivity(new Intent(LoginActivity.this, AccountActivity.class));
+                            startActivity(new Intent(LoginActivity.this, InstructorMainMenu.class));
                             finish();
                         }else {
                             Toast.makeText(LoginActivity.this, "Giriş hatası: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();

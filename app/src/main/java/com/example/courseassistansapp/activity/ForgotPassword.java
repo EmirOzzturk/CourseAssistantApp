@@ -1,4 +1,4 @@
-package com.example.courseassistansapp;
+package com.example.courseassistansapp.view;
 
 import android.content.Intent;
 import android.os.Bundle;

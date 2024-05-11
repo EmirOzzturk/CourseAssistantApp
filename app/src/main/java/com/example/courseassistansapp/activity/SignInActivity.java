@@ -1,4 +1,4 @@
-package com.example.courseassistansapp;
+package com.example.courseassistansapp.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.courseassistansapp.Model.User;
 import com.example.courseassistansapp.databinding.ActivitySignInBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
