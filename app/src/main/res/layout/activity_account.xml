@@ -20,16 +20,34 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/logout"
-                android:text="Hesaptan Çıkış Yap "
-                android:textAlignment="textStart"
-                android:clickable="true"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                />
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/backToMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Geri Dön"
+                    android:background="@color/cardview_shadow_start_color"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logout"
+                    android:text="Hesaptan Çıkış Yap "
+                    android:gravity="right"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="130dp"
@@ -262,6 +280,7 @@
                     android:clickable="true"
                     app:srcCompat="@drawable/sms_icon" />
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

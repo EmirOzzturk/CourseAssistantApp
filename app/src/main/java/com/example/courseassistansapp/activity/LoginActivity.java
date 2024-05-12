@@ -49,8 +49,13 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            startActivity(new Intent(LoginActivity.this, InstructorMainMenu.class));
-                            finish();
+                            if (email.endsWith("@yildiz.edu.tr")){
+                                startActivity(new Intent(LoginActivity.this, InstructorMainMenu.class));
+                                finish();
+                            }else if (email.endsWith("@std.yildiz.edu.tr")){
+                                startActivity(new Intent(LoginActivity.this, StudentMainMenu.class));
+                                finish();
+                            }
                         }else {
                             Toast.makeText(LoginActivity.this, "Giriş hatası: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                         }

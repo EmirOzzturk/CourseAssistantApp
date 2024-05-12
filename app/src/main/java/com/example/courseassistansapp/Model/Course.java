@@ -12,6 +12,7 @@ public class Course {
     private int numberOfGroups;
     private ArrayList<String> instructors;
     private ArrayList<String> students;
+    private String completionStatus;
 
 
 
@@ -46,6 +47,14 @@ public class Course {
 
     public void setId(String Id) {
         this.Id = Id;
+    }
+
+    public String getCompletionStatus() {
+        return completionStatus;
+    }
+
+    public void setCompletionStatus(String completionStatus) {
+        this.completionStatus = completionStatus;
     }
 
     public String getCourseName() {

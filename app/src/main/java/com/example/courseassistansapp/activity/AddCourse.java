@@ -42,7 +42,11 @@ public class AddCourse extends AppCompatActivity {
             public void onClick(View view) {
 
                 course = readFromScreen();
+
                 course.addInstructor(Auth.getUid());
+                course.addStudent("7H8RDMWmZMW7x2GhAXpf9m3XPu12");
+                course.setCompletionStatus("Devam Ediyor");
+
                 if (course.getId().isEmpty() || course.getCourseName().isEmpty() ||
                         binding.editTextGroupNumber.getText().toString().isEmpty() )
                 {

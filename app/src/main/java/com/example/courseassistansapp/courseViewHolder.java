@@ -1,5 +1,6 @@
 package com.example.courseassistansapp;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -24,5 +25,6 @@ public class courseViewHolder extends RecyclerView.ViewHolder {
         reportCourse = (ImageButton) itemview.findViewById(R.id.reportCourse);
 
         view = itemview;
+
     }
 }

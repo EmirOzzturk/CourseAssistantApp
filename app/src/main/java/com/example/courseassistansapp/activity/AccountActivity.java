@@ -104,6 +104,14 @@ public class AccountActivity extends AppCompatActivity {
             }
         });
 
+        binding.backToMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Önceki activity ye döner
+                finish();
+            }
+        });
+
         //Fotoğraf koy
         binding.profilePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
