@@ -45,7 +45,10 @@ public class AddCourse extends AppCompatActivity {
 
                 course.addInstructor(Auth.getUid());
                 course.addStudent("7H8RDMWmZMW7x2GhAXpf9m3XPu12");
-                course.setCompletionStatus("Devam Ediyor");
+                course.setCompletionStatus("Devam Eden Dersler");
+
+                //String key = myDatabase.child("courses").push().getKey();
+                //Log.d("tag", key);
 
                 if (course.getId().isEmpty() || course.getCourseName().isEmpty() ||
                         binding.editTextGroupNumber.getText().toString().isEmpty() )

@@ -48,6 +48,7 @@ public class InstructorMainMenu extends AppCompatActivity{
         ValueEventListener userInfoListener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
                 for (DataSnapshot childSnapshot : snapshot.child("courses").getChildren()) {
                     list.add(childSnapshot.getValue(Course.class));
                 }
